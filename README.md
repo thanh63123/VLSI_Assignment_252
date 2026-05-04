@@ -1,4 +1,4 @@
-# 8-bit RISC CPU VLSI Design
+# VLSI Assignment 252
 
 ## Overview
 This project implements a simple 8-bit RISC CPU in Verilog, designed specifically for a VLSI coursework assignment. It is fully verified and prepared for a professional ASIC design flow using Cadence EDA tools (Xcelium, Genus, Innovus, Conformal).
