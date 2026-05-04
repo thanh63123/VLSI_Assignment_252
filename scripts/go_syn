@@ -1,0 +1,12 @@
+#!/bin/bash -f
+#==============================================================================
+# RISC CPU - Genus Synthesis
+# Usage: ./go_syn
+#==============================================================================
+
+cd /home/share_file/cadence
+source add_path
+source add_license
+cd -
+
+genus -f scripts/synthesis.tcl &

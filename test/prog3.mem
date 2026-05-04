@@ -1,0 +1,24 @@
+// PROG3: Fibonacci sequence computation up to 144
+// Expected: Halt at address 0x0C (DONE)
+@00 11100011  // 00          JMP LOOP
+@03 10111011  // 03 LOOP:    LDA FN2
+@04 11011100  // 04          STO TEMP
+@05 01011010  // 05          ADD FN1
+@06 11011011  // 06          STO FN2
+@07 10111100  // 07          LDA TEMP
+@08 11011010  // 08          STO FN1
+@09 10011101  // 09          XOR LIMIT
+@0A 00100000  // 0A          SKZ
+@0B 11100011  // 0B          JMP LOOP
+@0C 00000000  // 0C DONE:    HLT
+@0D 10111111  // 0D AGAIN:   LDA ONE
+@0E 11011010  // 0E          STO FN1
+@0F 10111110  // 0F          LDA ZERO
+@10 11011011  // 10          STO FN2
+@11 11100011  // 11          JMP LOOP
+@1A 00000001  // 1A FN1:     data storage for 1st Fib. No.
+@1B 00000000  // 1B FN2:     data storage for 2nd Fib. No.
+@1C 00000000  // 1C TEMP:    temporary data storage
+@1D 10010000  // 1D LIMIT:   max value to calculate 144(dec)
+@1E 00000000  // 1E ZERO:    constant 0(decimal)
+@1F 00000001  // 1F ONE:     constant 1(decimal)

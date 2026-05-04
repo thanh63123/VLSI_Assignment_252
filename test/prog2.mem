@@ -1,0 +1,24 @@
+// PROG2: Tests AND, ADD
+// Expected: Halt at address 0x10 (CONGRATULATIONS - TEST2 PASSED!)
+@00 10111011  // 00 BEGIN:  LDA DATA_2
+@01 01111100  // 01         AND DATA_3
+@02 10011011  // 02         XOR DATA_2
+@03 00100000  // 03         SKZ
+@04 00000000  // 04         HLT (AND doesn't work)
+@05 01011010  // 05         ADD DATA_1
+@06 00100000  // 06         SKZ
+@07 11101001  // 07         JMP ADD_OK
+@08 00000000  // 08         HLT (ADD doesn't work)
+@09 10011100  // 09 ADD_OK: XOR DATA_3
+@0A 01011010  // 0A         ADD DATA_1
+@0B 11011101  // 0B         STO TEMP
+@0C 10111010  // 0C         LDA DATA_1
+@0D 01011101  // 0D         ADD TEMP
+@0E 00100000  // 0E         SKZ
+@0F 00000000  // 0F         HLT (ADD doesn't work)
+@10 00000000  // 10 END:    HLT (CONGRATULATIONS - TEST2 PASSED!)
+@11 11100000  // 11         JMP BEGIN
+@1A 00000001  // 1A DATA_1: constant 01(hex)
+@1B 10101010  // 1B DATA_2: constant AA(hex)
+@1C 11111111  // 1C DATA_3: constant FF(hex)
+@1D 00000000  // 1D TEMP:

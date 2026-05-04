@@ -1,0 +1,73 @@
+#!/bin/bash -f
+#==============================================================================
+# RISC CPU - Cadence Xcelium RTL Simulation
+# Usage: ./go_sim
+#==============================================================================
+
+cd /home/share_file/cadence
+source add_path
+source add_license
+cd -
+
+RTL_FILES="rtl/program_counter.v rtl/address_mux.v rtl/alu.v rtl/controller.v rtl/register.v rtl/memory.v rtl/risc_cpu.v"
+
+echo ""
+echo "======================================================"
+echo "  RISC CPU - Cadence Xcelium RTL Simulation"
+echo "======================================================"
+echo ""
+
+# --- Core Unit Testbenches ---
+echo "=== Core Unit Tests ==="
+
+echo "[1/13] Program Counter..."
+xrun rtl/program_counter.v tb/tb_program_counter.v +access+rwc
+
+echo "[2/13] Address Mux..."
+xrun rtl/address_mux.v tb/tb_address_mux.v +access+rwc
+
+echo "[3/13] ALU..."
+xrun rtl/alu.v tb/tb_alu.v +access+rwc
+
+echo "[4/13] Register..."
+xrun rtl/register.v tb/tb_register.v +access+rwc
+
+echo "[5/13] Memory..."
+xrun rtl/memory.v tb/tb_memory.v +access+rwc
+
+echo "[6/13] Controller..."
+xrun rtl/controller.v tb/tb_controller.v +access+rwc
+
+# --- System Tests ---
+echo ""
+echo "=== System Tests ==="
+
+echo "[7/13] PROG1 (JMP/LDA/SKZ/STO/XOR)..."
+xrun $RTL_FILES tb/tb_risc_cpu.v +define+PROG=1 +access+rwc
+
+echo "[8/13] PROG2 (AND/ADD)..."
+xrun $RTL_FILES tb/tb_risc_cpu.v +define+PROG=2 +access+rwc
+
+echo "[9/13] PROG3 (Fibonacci)..."
+xrun $RTL_FILES tb/tb_risc_cpu.v +define+PROG=3 +access+rwc
+
+# --- Advanced Module Tests ---
+echo ""
+echo "=== Advanced Module Tests ==="
+
+echo "[10/13] Extended ALU..."
+xrun rtl/alu_extended.v tb/tb_alu_extended.v +access+rwc
+
+echo "[11/13] Multiplier..."
+xrun rtl/multiplier.v tb/tb_multiplier.v +access+rwc
+
+echo "[12/13] Divider..."
+xrun rtl/divider.v tb/tb_divider.v +access+rwc
+
+echo "[13/13] Hazard Detection Unit..."
+xrun rtl/hazard_unit.v tb/tb_hazard_unit.v +access+rwc
+
+echo ""
+echo "======================================================"
+echo "  All 13 tests completed!"
+echo "======================================================"
