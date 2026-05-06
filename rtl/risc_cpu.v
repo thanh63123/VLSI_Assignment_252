@@ -219,6 +219,7 @@ module controller (
                      STORE      = 3'd7;
 
     reg [2:0] state;
+    reg       halted;   // sticky halt latch
 
     // ALUOP: opcode requires memory read (ADD, AND, XOR, LDA)
     wire aluop;
@@ -227,12 +228,32 @@ module controller (
                    (opcode == 3'b100) ||  // XOR
                    (opcode == 3'b101);    // LDA
 
+    // HLT detection at OP_ADDR: opcode just decoded from IR.
+    wire hlt_detect;
+    assign hlt_detect = (state == OP_ADDR) && (opcode == 3'b000);
+
+    //--------------------------------------------------------------------------
+    // Halt latch: once a HLT instruction is decoded, freeze CPU until reset.
+    // This implements the spec requirement: "the program stops when HALT is
+    // received".
+    //--------------------------------------------------------------------------
+    always @(posedge clk) begin
+        if (rst) begin
+            halted <= 1'b0;
+        end else if (hlt_detect) begin
+            halted <= 1'b1;
+        end
+    end
+
     //--------------------------------------------------------------------------
     // State register: sequential state transitions
     //--------------------------------------------------------------------------
     always @(posedge clk) begin
         if (rst) begin
             state <= INST_ADDR;
+        end else if (halted) begin
+            // Freeze FSM while halted.
+            state <= state;
         end else begin
             case (state)
                 INST_ADDR:  state <= INST_FETCH;
@@ -249,7 +270,8 @@ module controller (
     end
 
     //--------------------------------------------------------------------------
-    // Output logic: combinational based on current state and opcode/is_zero
+    // Output logic: combinational based on current state, opcode, is_zero,
+    //               and halted latch.
     //--------------------------------------------------------------------------
     always @(*) begin
         // Default all outputs to 0
@@ -263,57 +285,62 @@ module controller (
         wr     = 1'b0;
         data_e = 1'b0;
 
-        case (state)
-            INST_ADDR: begin
-                sel = 1'b1;
-            end
+        if (halted || hlt_detect) begin
+            // Hold halt high once HLT is decoded; gate all other strobes off.
+            halt = 1'b1;
+        end else begin
+            case (state)
+                INST_ADDR: begin
+                    sel = 1'b1;
+                end
 
-            INST_FETCH: begin
-                sel = 1'b1;
-                rd  = 1'b1;
-            end
+                INST_FETCH: begin
+                    sel = 1'b1;
+                    rd  = 1'b1;
+                end
 
-            INST_LOAD: begin
-                sel   = 1'b1;
-                rd    = 1'b1;
-                ld_ir = 1'b1;
-            end
+                INST_LOAD: begin
+                    sel   = 1'b1;
+                    rd    = 1'b1;
+                    ld_ir = 1'b1;
+                end
 
-            IDLE: begin
-                sel   = 1'b1;
-                rd    = 1'b1;
-                ld_ir = 1'b1;
-            end
+                IDLE: begin
+                    sel   = 1'b1;
+                    rd    = 1'b1;
+                    ld_ir = 1'b1;
+                end
 
-            OP_ADDR: begin
-                halt   = (opcode == 3'b000);  // HLT
-                // Do not advance PC on HLT so halt address matches instruction address.
-                inc_pc = (opcode != 3'b000);
-            end
+                OP_ADDR: begin
+                    // HLT case is handled above (halted/hlt_detect path);
+                    // for all other opcodes advance the PC normally.
+                    inc_pc = 1'b1;
+                end
 
-            OP_FETCH: begin
-                rd = aluop;
-            end
+                OP_FETCH: begin
+                    rd = aluop;
+                end
 
-            ALU_OP: begin
-                rd     = aluop;
-                inc_pc = (opcode == 3'b001) && is_zero;  // SKZ & zero
-                ld_pc  = (opcode == 3'b111);             // JMP
-                data_e = (opcode == 3'b110);             // STO
-            end
+                ALU_OP: begin
+                    rd     = aluop;
+                    inc_pc = (opcode == 3'b001) && is_zero;  // SKZ & zero
+                    ld_pc  = (opcode == 3'b111);             // JMP
+                    data_e = (opcode == 3'b110);             // STO
+                end
 
-            STORE: begin
-                rd     = aluop;
-                ld_ac  = aluop;
-                ld_pc  = (opcode == 3'b111);             // JMP
-                wr     = (opcode == 3'b110);             // STO
-                data_e = (opcode == 3'b110);             // STO
-            end
+                STORE: begin
+                    rd     = aluop;
+                    ld_ac  = aluop;
+                    ld_pc  = (opcode == 3'b111);             // JMP
+                    wr     = (opcode == 3'b110);             // STO
+                    data_e = (opcode == 3'b110);             // STO
+                end
 
-            default: begin
-                // All outputs stay at default (0)
-            end
-        endcase
+                default: begin
+                    // All outputs stay at default (0)
+                end
+            endcase
+        end
     end
 
 endmodule

@@ -511,7 +511,7 @@ module tb_controller;
         @(posedge clk); #1; // INST_LOAD
         @(posedge clk); #1; // IDLE
         @(posedge clk); #1; // OP_ADDR
-        check_outputs(0,0,0,1,1,0,0,0,0, "OP_ADDR (HLT) - halt=1");
+        check_outputs(0,0,0,1,0,0,0,0,0, "OP_ADDR (HLT) - halt=1, inc_pc=0");
 
         // Test JMP instruction
         rst = 1;
