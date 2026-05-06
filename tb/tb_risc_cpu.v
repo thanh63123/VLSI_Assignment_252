@@ -1325,19 +1325,19 @@ module tb_risc_cpu;
     initial begin
         case (`PROG)
             1: begin
-                expected_halt_pc = 5'h18;
+                expected_halt_pc = 5'h17;
                 prog_name = "PROG1 (JMP/LDA/SKZ/STO/XOR)";
             end
             2: begin
-                expected_halt_pc = 5'h11;
+                expected_halt_pc = 5'h10;
                 prog_name = "PROG2 (AND/ADD)";
             end
             3: begin
-                expected_halt_pc = 5'h0D;
+                expected_halt_pc = 5'h0C;
                 prog_name = "PROG3 (Fibonacci)";
             end
             default: begin
-                expected_halt_pc = 5'h18;
+                expected_halt_pc = 5'h17;
                 prog_name = "PROG1 (default)";
             end
         endcase

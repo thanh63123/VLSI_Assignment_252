@@ -287,7 +287,8 @@ module controller (
 
             OP_ADDR: begin
                 halt   = (opcode == 3'b000);  // HLT
-                inc_pc = 1'b1;
+                // Do not advance PC on HLT so halt address matches instruction address.
+                inc_pc = (opcode != 3'b000);
             end
 
             OP_FETCH: begin
