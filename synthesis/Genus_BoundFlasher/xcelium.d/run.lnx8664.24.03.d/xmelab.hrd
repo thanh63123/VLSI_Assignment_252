@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+
+tb_risc_cpu
+-DELAY_MODE
+-DELAY_MODE
+ZERO
+-ACCESS
++rwc

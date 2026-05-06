@@ -5,9 +5,9 @@
 #==============================================================================
 
 # ---- USER CONFIGURATION (MUST UPDATE) ----
-set LIB_PATH "/path/to/stdcell/lib"    ;# <-- UPDATE THIS
-set LIB_NAME "your_stdcell.lib"        ;# <-- UPDATE THIS
-set LEF_FILE "/path/to/stdcell.lef"    ;# <-- UPDATE THIS
+set LIB_PATH "./synthesis/Genus_BoundFlasher/LIB"    ;# <-- UPDATE THIS
+set LIB_NAME "slow.lib"        ;# <-- UPDATE THIS
+set LEF_FILE "./synthesis/Genus_BoundFlasher/LEF/gsclib045_tech.lef ./synthesis/Genus_BoundFlasher/LEF/gsclib045_macro.lef"    ;# <-- UPDATE THIS
 set TOP_MODULE "risc_cpu"
 
 # ---- Read Design ----

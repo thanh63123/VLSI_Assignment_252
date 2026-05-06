@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+PROG=1
++delay_mode_zero
++access+rwc
+-DELAY_MODE
+ZERO
+-ACCESS
++rwc
+-no_analogsolver
+-MESSAGES
+tb_risc_cpu
+-XLMODE
+./xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.24.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

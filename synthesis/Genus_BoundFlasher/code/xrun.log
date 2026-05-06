@@ -1,0 +1,11 @@
+xrun(64): 24.03-s011: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s011: Started on May 06, 2026 at 17:03:24 +07
+xrun
+	output/synthesis_net.v
+	tb/tb_risc_cpu.v
+	+define+PROG=1
+	-v /path/to/stdcell.v
+	+delay_mode_zero
+	+access+rwc
+xrun: *SE,FILEMIS: Cannot find the provided file tb/tb_risc_cpu.v.
+TOOL:	xrun(64)	24.03-s011: Exiting on May 06, 2026 at 17:03:24 +07  (total: 00:00:00)

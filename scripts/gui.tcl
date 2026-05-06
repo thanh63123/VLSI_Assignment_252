@@ -10,13 +10,13 @@ set DESIGN risc_cpu
 ## Library setup
 ###############################################################
 # UPDATE THESE PATHS to match your lab server
-read_libs "../LIB/slow.lib"
+read_libs "./synthesis/Genus_BoundFlasher/LIB/slow.lib"
 
 # If using LEF files:
-# read_physical -lef "../LEF/gsclib045_tech.lef ../LEF/gsclib045_macro.lef"
+# read_physical -lef "./synthesis/Genus_BoundFlasher/LEF/gsclib045_tech.lef ./synthesis/Genus_BoundFlasher/LEF/gsclib045_macro.lef"
 
 ####################################################################
 ## Load Design
 ####################################################################
-read_hdl "./outputs/${DESIGN}_m.v"
+read_hdl "./output/synthesis_net.v"
 elaborate $DESIGN

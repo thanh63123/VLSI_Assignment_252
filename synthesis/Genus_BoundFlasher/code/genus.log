@@ -1,0 +1,72 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:38:15.166850] Configured Lic search path (22.01-s003): 5280@172.28.10.187:5280@192.168.32.10
+
+Version: 22.17-s071_1, built Wed Sep 11 22:37:05 PDT 2024
+Options: -files synthesis.tcl 
+Date:    Wed May 06 16:38:15 2026
+Host:    vlsiktmt (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (1core*2cpus*3physical cpus*Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz 22528KB) (32780644KB)
+PID:     29367
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[16:38:36.428024] Periodic Lic check successful
+[16:38:36.428032] Feature usage summary:
+[16:38:36.428033] Genus_Synthesis
+ (21 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (26 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (31 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source synthesis.tcl
+#@ Begin verbose source ./synthesis.tcl
+@file(synthesis.tcl) 15: set DESIGN risc_cpu
+@file(synthesis.tcl) 16: set _OUTPUTS_PATH ./output
+@file(synthesis.tcl) 17: set _REPORTS_PATH ./reports
+@file(synthesis.tcl) 18: set _LOG_PATH     ./logs
+@file(synthesis.tcl) 20: file mkdir $_OUTPUTS_PATH
+@file(synthesis.tcl) 21: file mkdir $_REPORTS_PATH
+@file(synthesis.tcl) 22: file mkdir $_LOG_PATH
+@file(synthesis.tcl) 28: set_db init_lib_search_path "./synthesis/Genus_BoundFlasher/LIB"
+  Setting attribute of root '/': 'init_lib_search_path' = ./synthesis/Genus_BoundFlasher/LIB
+@file(synthesis.tcl) 29: set_db init_hdl_search_path "./rtl"
+  Setting attribute of root '/': 'init_hdl_search_path' = ./rtl
+@file(synthesis.tcl) 31: read_libs "slow.lib"
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./synthesis.tcl
+1
+Encountered problems processing file: synthesis.tcl
+WARNING: This version of the tool is 601 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 101s, ST: 16s, FG: 16s, CPU: 10.3%}, MEM {curr: 1.1G, peak: 1.1G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.8G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 109s, ST: 17s, FG: 17s, CPU: 10.3%}, MEM {curr: 1.1G, peak: 1.1G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.8G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 111s, ST: 17s, FG: 17s, CPU: 9.7%}, MEM {curr: 1.1G, peak: 1.1G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.8G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 112s, ST: 17s, FG: 17s, CPU: 9.7%}, MEM {curr: 1.1G, peak: 1.1G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.8G}
+Abnormal exit.

@@ -13,7 +13,7 @@
 ## Preset global variables and attributes
 ##############################################################################
 set DESIGN risc_cpu
-set _OUTPUTS_PATH ./outputs
+set _OUTPUTS_PATH ./output
 set _REPORTS_PATH ./reports
 set _LOG_PATH     ./logs
 
@@ -25,8 +25,8 @@ file mkdir $_LOG_PATH
 ## Library setup
 ###############################################################
 # UPDATE THESE PATHS to match your lab server
-set_db init_lib_search_path "../LIB"
-set_db init_hdl_search_path "../RTL"
+set_db init_lib_search_path "./synthesis/Genus_BoundFlasher/LIB"
+set_db init_hdl_search_path "./rtl"
 
 read_libs "slow.lib"
 
@@ -37,12 +37,6 @@ read_libs "slow.lib"
 ## Load Design
 ####################################################################
 read_hdl " \
-    program_counter.v \
-    address_mux.v \
-    alu.v \
-    controller.v \
-    register.v \
-    memory.v \
     risc_cpu.v \
 "
 
@@ -52,7 +46,7 @@ check_design -unresolved
 ####################################################################
 ## Constraints Setup
 ####################################################################
-read_sdc ../constraints/risc_cpu_gate.sdc
+read_sdc synthesis/Genus_BoundFlasher/constraints/risc_cpu_gate.sdc
 
 ####################################################################
 ## Synthesize
@@ -73,10 +67,10 @@ report_power                > ${_REPORTS_PATH}/final_power.rpt
 report_gates                > ${_REPORTS_PATH}/final_gates.rpt
 
 ## Write Netlist
-write_hdl > ${_OUTPUTS_PATH}/${DESIGN}_m.v
+write_hdl > ${_OUTPUTS_PATH}/synthesis_net.v
 
 ## Write SDC for Innovus/Tempus
-write_sdc > ${_OUTPUTS_PATH}/${DESIGN}.sdc
+write_sdc > ${_OUTPUTS_PATH}/synthesis.sdc
 
 #################################
 ### write_do_lec
@@ -84,7 +78,7 @@ write_sdc > ${_OUTPUTS_PATH}/${DESIGN}.sdc
 puts ""
 puts "============================================"
 puts "  Genus Synthesis COMPLETE"
-puts "  Netlist: ${_OUTPUTS_PATH}/${DESIGN}_m.v"
+puts "  Netlist: ${_OUTPUTS_PATH}/synthesis_net.v"
 puts "  Reports: ${_REPORTS_PATH}/"
 puts "============================================"
 puts ""

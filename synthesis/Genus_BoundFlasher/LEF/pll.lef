@@ -1,0 +1,75 @@
+##
+## LEF for PtnCells ;
+## created by Encounter v10.12-e077_1 on Wed Mar 16 14:30:14 2011
+##
+
+VERSION 5.6 ;
+
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+UNITS
+  DATABASE MICRONS 2000 ;
+END UNITS
+
+MACRO pll
+  CLASS BLOCK ;
+  SIZE 6.2900 BY 5.1300 ;
+  FOREIGN pll 0.0000 0.0000 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y R90 ;
+  PIN refclk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END refclk
+  PIN ibias
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END ibias
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+  END reset
+  PIN clk1x
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END clk1x
+  PIN clk2x
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END clk2x
+  PIN vcop
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END vcop
+  PIN vcom
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+  END vcom
+  OBS
+    LAYER M1 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M2 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M3 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M4 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M5 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M6 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M7 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M8 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M9 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M10 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+    LAYER M11 ;
+      RECT 0.0000 0.0000 6.2900 5.1300 ;
+  END
+END pll
+
+END LIBRARY

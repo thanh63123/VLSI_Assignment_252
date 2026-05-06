@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+PROG=3
+-amsdlibdir
+output/xcelium.d/AMSD
+-XMLIBDIRNAME
+output/xcelium.d
+-ACCESS
+rw
+-LICQUEUE
+-no_analogsolver
+tb_risc_cpu
+-XLMODE
+output/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+output/xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+output/xcelium.d/run.lnx8664.24.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

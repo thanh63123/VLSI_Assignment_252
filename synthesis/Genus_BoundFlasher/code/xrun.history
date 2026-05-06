@@ -1,0 +1,2 @@
+#e1(06May2026:17:03:24): source ./xcelium.d/env.d/env.history.06May2026_17_03_24
+s1(06May2026:17:03:24):  xrun output/synthesis_net.v tb/tb_risc_cpu.v +define+PROG=1 -v /path/to/stdcell.v +delay_mode_zero +access+rwc 

@@ -9,16 +9,10 @@ set_log_file lec.log -replace
 
 # Read standard cell library (revised side)
 # UPDATE: Use the same library from your synthesis_env
-read_library slow.lib -lib -revised
+read_library ./synthesis/Genus_BoundFlasher/LIB/slow.lib -lib -revised
 
 # Read RTL (golden reference)
 read_design rtl/risc_cpu.v \
-            rtl/program_counter.v \
-            rtl/address_mux.v \
-            rtl/alu.v \
-            rtl/controller.v \
-            rtl/register.v \
-            rtl/memory.v \
     -verilog -golden
 
 # Read synthesis netlist (revised)

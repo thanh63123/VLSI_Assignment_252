@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(06May2026:17:07:02):( xrun code/output/synthesis_net.v tb/tb_risc_cpu.v +define+PROG=1 -v /path/to/stdcell.v +delay_mode_zero +access+rwc )&&(./xcelium.d/env.d/env.history.06May2026_17_07_02)
+s2::(06May2026:17:09:33):( xrun code/output/synthesis_net.v tb/tb_risc_cpu.v +define+PROG=1 -v /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/YOUR_STDCELL_FILE.v -top tb_risc_cpu +delay_mode_zero +access+rwc )&&(./xcelium.d/env.d/env.history.06May2026_17_09_33)

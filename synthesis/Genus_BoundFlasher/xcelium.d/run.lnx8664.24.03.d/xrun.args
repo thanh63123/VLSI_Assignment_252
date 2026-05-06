@@ -1,0 +1,13 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+code/output/synthesis_net.v
+tb/tb_risc_cpu.v
++define+PROG=1
+-v
+/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/YOUR_STDCELL_FILE.v
+-top
+tb_risc_cpu
++delay_mode_zero
++access+rwc

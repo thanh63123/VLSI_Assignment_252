@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+PROG=3
+-amsdlibdir
+output/xcelium.d/AMSD
+-LICQUEUE
++EMGRLOG
+output/run.log
+-XLSTIME
+1778045896
+-XLKEEP
+-XLMODE
+output/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+output/xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+output/xcelium.d/run.lnx8664.24.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	24.03-s011"

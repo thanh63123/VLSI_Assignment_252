@@ -1,0 +1,415 @@
+[05/06 17:39:43      0s] 
+[05/06 17:39:43      0s] Cadence Innovus(TM) Implementation System.
+[05/06 17:39:43      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/06 17:39:43      0s] 
+[05/06 17:39:43      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[05/06 17:39:43      0s] Options:	-init pnr.tcl 
+[05/06 17:39:43      0s] Date:		Wed May  6 17:39:43 2026
+[05/06 17:39:43      0s] Host:		vlsiktmt (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (1core*2cpus*Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz 22528KB)
+[05/06 17:39:43      0s] OS:		CentOS Linux 7 (Core)
+[05/06 17:39:43      0s] 
+[05/06 17:39:43      0s] License:
+[05/06 17:39:43      0s] 		[17:39:43.166874] Configured Lic search path (22.01-s003): 5280@172.28.10.187:5280@192.168.32.10
+
+[05/06 17:40:03      0s] 		invs	Innovus Implementation System	22.1	checkout succeeded
+[05/06 17:40:03      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/06 17:40:38     20s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[05/06 17:40:42     23s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[05/06 17:40:42     23s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[05/06 17:40:42     23s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[05/06 17:40:42     23s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[05/06 17:40:42     23s] @(#)CDS: CPE v22.17-s051
+[05/06 17:40:42     23s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[05/06 17:40:42     23s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[05/06 17:40:42     23s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[05/06 17:40:42     23s] @(#)CDS: RCDB 11.15.0
+[05/06 17:40:42     23s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[05/06 17:40:42     23s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[05/06 17:40:42     23s] Create and set the environment variable TMPDIR to /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/pnr/innovus_temp_29641_ba3e27b9-c42f-4527-b518-ee6723c8a8a3_vlsiktmt_cc03group4_HeBkZM.
+
+[05/06 17:40:42     23s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[05/06 17:40:44     25s] 
+[05/06 17:40:44     25s] **INFO:  MMMC transition support version v31-84 
+[05/06 17:40:44     25s] 
+[05/06 17:40:44     25s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/06 17:40:44     25s] <CMD> suppressMessage ENCEXT-2799
+[05/06 17:40:45     25s] <CMD> getVersion
+[05/06 17:40:45     25s] [INFO] Loading PVS 23.11 fill procedures
+[05/06 17:40:45     25s] Sourcing file "pnr.tcl" ...
+[05/06 17:40:45     25s] source pnr.tcl
+[05/06 17:40:45     25s] <CMD> set init_verilog /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis_net.v
+[05/06 17:40:45     25s] <CMD> set init_top_cell risc_cpu
+[05/06 17:40:45     25s] <CMD> set init_lef_file {/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LEF/gsclib045_tech.lef /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LEF/gsclib045_macro.lef}
+[05/06 17:40:45     25s] <CMD> set init_pwr_net VDD
+[05/06 17:40:45     25s] <CMD> set init_gnd_net VSS
+[05/06 17:40:45     25s] <CMD> set init_mmmc_file mmmc_setup.tcl
+[05/06 17:40:45     25s] <CMD> init_design
+[05/06 17:40:45     25s] #% Begin Load MMMC data ... (date=05/06 17:40:45, mem=1266.9M)
+[05/06 17:40:45     26s] #% End Load MMMC data ... (date=05/06 17:40:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1266.9M, current mem=1266.8M)
+[05/06 17:40:45     26s] 
+[05/06 17:40:45     26s] Loading LEF file /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LEF/gsclib045_tech.lef ...
+[05/06 17:40:45     26s] Set DBUPerIGU to M2 pitch 400.
+[05/06 17:40:45     26s] 
+[05/06 17:40:45     26s] Loading LEF file /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LEF/gsclib045_macro.lef ...
+[05/06 17:40:45     26s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/06 17:40:45     26s] Type 'man IMPLF-200' for more detail.
+[05/06 17:40:45     26s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/06 17:40:45     26s] Loading view definition file from mmmc_setup.tcl
+[05/06 17:40:45     26s] Reading default_lib timing library '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/slow.lib' ...
+[05/06 17:40:45     26s] **ERROR: (TECHLIB-1204):	Illegal value '0.9V' defined for attribute 'voltage_unit'. The attribute will be ignored. (File /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/slow.lib, Line 15)
+Read 477 cells in library 'slow_1v0' 
+[05/06 17:40:46     26s] Ending "PreSetAnalysisView" (total cpu=0:00:00.7, real=0:00:01.0, peak res=1326.7M, current mem=1284.0M)
+[05/06 17:40:46     26s] *** End library_loading (cpu=0.01min, real=0.02min, mem=15.5M, fe_cpu=0.45min, fe_real=1.05min, fe_mem=1509.2M) ***
+[05/06 17:40:46     26s] #% Begin Load netlist data ... (date=05/06 17:40:46, mem=1284.0M)
+[05/06 17:40:46     26s] *** Begin netlist parsing (mem=1509.2M) ***
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'OA22XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'OA22XL' is defined in LEF but not in the timing library.
+[05/06 17:40:46     26s] Type 'man IMPVL-159' for more detail.
+[05/06 17:40:46     26s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[05/06 17:40:46     26s] To increase the message display limit, refer to the product command reference manual.
+[05/06 17:40:46     26s] Created 477 new cells from 1 timing libraries.
+[05/06 17:40:46     26s] Reading netlist ...
+[05/06 17:40:46     26s] Backslashed names will retain backslash and a trailing blank character.
+[05/06 17:40:46     26s] Reading verilog netlist '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis_net.v'
+[05/06 17:40:46     26s] 
+[05/06 17:40:46     26s] *** Memory Usage v#1 (Current mem = 1510.203M, initial mem = 654.375M) ***
+[05/06 17:40:46     26s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1510.2M) ***
+[05/06 17:40:46     26s] #% End Load netlist data ... (date=05/06 17:40:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=1291.7M, current mem=1291.7M)
+[05/06 17:40:46     26s] Set top cell to risc_cpu.
+[05/06 17:40:48     27s] Hooked 477 DB cells to tlib cells.
+[05/06 17:40:48     27s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1299.4M, current mem=1299.4M)
+[05/06 17:40:48     27s] Starting recursive module instantiation check.
+[05/06 17:40:48     27s] No recursion found.
+[05/06 17:40:48     27s] Building hierarchical netlist for Cell risc_cpu ...
+[05/06 17:40:48     27s] ***** UseNewTieNetMode *****.
+[05/06 17:40:48     27s] *** Netlist is unique.
+[05/06 17:40:48     27s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[05/06 17:40:48     27s] ** info: there are 488 modules.
+[05/06 17:40:48     27s] ** info: there are 757 stdCell insts.
+[05/06 17:40:48     27s] ** info: there are 757 stdCell insts with at least one signal pin.
+[05/06 17:40:48     27s] 
+[05/06 17:40:48     27s] *** Memory Usage v#1 (Current mem = 1549.621M, initial mem = 654.375M) ***
+[05/06 17:40:48     27s] Horizontal Layer M1 offset = 190 (guessed)
+[05/06 17:40:48     27s] Vertical Layer M2 offset = 200 (derived)
+[05/06 17:40:48     27s] Suggestion: specify LAYER OFFSET in LEF file
+[05/06 17:40:48     27s] Reason: hard to extract LAYER OFFSET from standard cells
+[05/06 17:40:48     27s] Start create_tracks
+[05/06 17:40:48     27s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[05/06 17:40:48     27s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[05/06 17:40:48     27s] Extraction setup Started 
+[05/06 17:40:48     27s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/06 17:40:48     27s] Type 'man IMPEXT-2773' for more detail.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.18 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.17 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M10 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M11 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/06 17:40:48     27s] Summary of Active RC-Corners : 
+[05/06 17:40:48     27s]  
+[05/06 17:40:48     27s]  Analysis View: default_view
+[05/06 17:40:48     27s]     RC-Corner Name        : default_rc
+[05/06 17:40:48     27s]     RC-Corner Index       : 0
+[05/06 17:40:48     27s]     RC-Corner Temperature : 25 Celsius
+[05/06 17:40:48     27s]     RC-Corner Cap Table   : ''
+[05/06 17:40:48     27s]     RC-Corner PreRoute Res Factor         : 1
+[05/06 17:40:48     27s]     RC-Corner PreRoute Cap Factor         : 1
+[05/06 17:40:48     27s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/06 17:40:48     27s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/06 17:40:48     27s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/06 17:40:48     27s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[05/06 17:40:48     27s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[05/06 17:40:48     27s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/06 17:40:48     27s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/06 17:40:48     27s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[05/06 17:40:48     27s] eee: RC Grid memory allocated = 3300 (5 X 5 X 11 X 12b)
+[05/06 17:40:48     27s] Updating RC Grid density data for preRoute extraction ...
+[05/06 17:40:48     27s] eee: pegSigSF=1.070000
+[05/06 17:40:48     27s] Initializing multi-corner resistance tables ...
+[05/06 17:40:48     27s] eee: Grid unit RC data computation started
+[05/06 17:40:48     27s] eee: Grid unit RC data computation completed
+[05/06 17:40:48     27s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] eee: l=11 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/06 17:40:48     27s] {RT default_rc 0 11 11 {10 0} 1}
+[05/06 17:40:48     27s] eee: LAM-FP: thresh=1 ; dimX=336.447368 ; dimY=333.000000 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[05/06 17:40:48     27s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.759000 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.897500 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/06 17:40:48     27s] eee: NetCapCache creation started. (Current Mem: 1721.754M) 
+[05/06 17:40:48     27s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 1721.754M) 
+[05/06 17:40:48     27s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(63.925000, 63.270000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (4 X 4)
+[05/06 17:40:48     27s] eee: Metal Layers Info:
+[05/06 17:40:48     27s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/06 17:40:48     27s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/06 17:40:48     27s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/06 17:40:48     27s] eee: |       M1 |   1 |   0.060 |   0.060 |   0.190 |  0.000 |   3.00 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M2 |   2 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | V | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M3 |   3 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M4 |   4 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | V | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M5 |   5 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M6 |   6 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | V | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M7 |   7 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M8 |   8 |   0.080 |   0.070 |   0.200 |  0.000 |   2.12 | V | 0 |  1 |
+[05/06 17:40:48     27s] eee: |       M9 |   9 |   0.080 |   0.070 |   0.400 |  0.000 |   0.25 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: |      M10 |  10 |   0.220 |   0.200 |   0.500 |  0.000 |   0.09 | V | 0 |  1 |
+[05/06 17:40:48     27s] eee: |      M11 |  11 |   0.220 |   0.200 |   0.500 |  0.000 |   0.09 | H | 0 |  1 |
+[05/06 17:40:48     27s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/06 17:40:48     27s] eee: uC/uR for corner default_rc, min-width/min-spacing, 30 perc over/under densities.
+[05/06 17:40:48     27s] eee: +-----------------------NDR Info-----------------------+
+[05/06 17:40:48     27s] eee: Number of NDR:: 1,  Number of Fake NDR:: 0
+[05/06 17:40:48     27s] eee: +----------------------------------------------------+
+[05/06 17:40:48     27s] eee: | NDR Name:: VLMDefaultSetup  | Id:: 1  | isHard:: 0 
+[05/06 17:40:48     27s] eee: +----------------------------------------------------+
+[05/06 17:40:48     27s] *Info: initialize multi-corner CTS.
+[05/06 17:40:48     27s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1568.7M, current mem=1332.6M)
+[05/06 17:40:48     27s] Reading timing constraints file '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis.sdc' ...
+[05/06 17:40:49     27s] Current (total cpu=0:00:27.8, real=0:01:06, peak res=1694.5M, current mem=1694.5M)
+[05/06 17:40:49     27s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis.sdc, Line 9).
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis.sdc, Line 10).
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] INFO (CTE): Reading of timing constraints file /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/code/output/synthesis.sdc completed, with 2 WARNING
+[05/06 17:40:49     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1706.8M, current mem=1706.8M)
+[05/06 17:40:49     27s] Current (total cpu=0:00:27.8, real=0:01:06, peak res=1706.8M, current mem=1706.8M)
+[05/06 17:40:49     27s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[05/06 17:40:49     27s] Summary for sequential cells identification: 
+[05/06 17:40:49     27s]   Identified SBFF number: 102
+[05/06 17:40:49     27s]   Identified MBFF number: 0
+[05/06 17:40:49     27s]   Identified SB Latch number: 0
+[05/06 17:40:49     27s]   Identified MB Latch number: 0
+[05/06 17:40:49     27s]   Not identified SBFF number: 16
+[05/06 17:40:49     27s]   Not identified MBFF number: 0
+[05/06 17:40:49     27s]   Not identified SB Latch number: 0
+[05/06 17:40:49     27s]   Not identified MB Latch number: 0
+[05/06 17:40:49     27s]   Number of sequential cells which are not FFs: 32
+[05/06 17:40:49     27s] Total number of combinational cells: 317
+[05/06 17:40:49     27s] Total number of sequential cells: 150
+[05/06 17:40:49     27s] Total number of tristate cells: 10
+[05/06 17:40:49     27s] Total number of level shifter cells: 0
+[05/06 17:40:49     27s] Total number of power gating cells: 0
+[05/06 17:40:49     27s] Total number of isolation cells: 0
+[05/06 17:40:49     27s] Total number of power switch cells: 0
+[05/06 17:40:49     27s] Total number of pulse generator cells: 0
+[05/06 17:40:49     27s] Total number of always on buffers: 0
+[05/06 17:40:49     27s] Total number of retention cells: 0
+[05/06 17:40:49     27s] Total number of physical cells: 0
+[05/06 17:40:49     27s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX8 CLKBUFX3 BUFX6
+[05/06 17:40:49     27s] Total number of usable buffers: 16
+[05/06 17:40:49     27s] List of unusable buffers:
+[05/06 17:40:49     27s] Total number of unusable buffers: 0
+[05/06 17:40:49     27s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 INVX1 CLKINVX4 CLKINVX6 INVX12 INVX2 INVX3 CLKINVX8 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+[05/06 17:40:49     27s] Total number of usable inverters: 19
+[05/06 17:40:49     27s] List of unusable inverters:
+[05/06 17:40:49     27s] Total number of unusable inverters: 0
+[05/06 17:40:49     27s] List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+[05/06 17:40:49     27s] Total number of identified usable delay cells: 8
+[05/06 17:40:49     27s] List of identified unusable delay cells:
+[05/06 17:40:49     27s] Total number of identified unusable delay cells: 0
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Deleting Cell Server Begin ...
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Deleting Cell Server End ...
+[05/06 17:40:49     27s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1726.3M, current mem=1726.3M)
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[05/06 17:40:49     27s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[05/06 17:40:49     27s] Summary for sequential cells identification: 
+[05/06 17:40:49     27s]   Identified SBFF number: 102
+[05/06 17:40:49     27s]   Identified MBFF number: 0
+[05/06 17:40:49     27s]   Identified SB Latch number: 0
+[05/06 17:40:49     27s]   Identified MB Latch number: 0
+[05/06 17:40:49     27s]   Not identified SBFF number: 16
+[05/06 17:40:49     27s]   Not identified MBFF number: 0
+[05/06 17:40:49     27s]   Not identified SB Latch number: 0
+[05/06 17:40:49     27s]   Not identified MB Latch number: 0
+[05/06 17:40:49     27s]   Number of sequential cells which are not FFs: 32
+[05/06 17:40:49     27s]  Visiting view : default_view
+[05/06 17:40:49     27s]    : PowerDomain = none : Weighted F : unweighted  = 25.10 (1.000) with rcCorner = 0
+[05/06 17:40:49     27s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[05/06 17:40:49     27s]  Visiting view : default_view
+[05/06 17:40:49     27s]    : PowerDomain = none : Weighted F : unweighted  = 25.10 (1.000) with rcCorner = 0
+[05/06 17:40:49     27s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[05/06 17:40:49     27s] TLC MultiMap info (StdDelay):
+[05/06 17:40:49     27s]   : default_delay + default_lib + 1 + no RcCorner := 18.4ps
+[05/06 17:40:49     27s]   : default_delay + default_lib + 1 + default_rc := 25.1ps
+[05/06 17:40:49     27s]  Setting StdDelay to: 25.1ps
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Deleting Cell Server Begin ...
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] TimeStamp Deleting Cell Server End ...
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] *** Summary of all messages that are not suppressed in this session:
+[05/06 17:40:49     27s] Severity  ID               Count  Summary                                  
+[05/06 17:40:49     27s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/06 17:40:49     27s] WARNING   IMPEXT-2766         11  The sheet resistance for layer %s is not...
+[05/06 17:40:49     27s] WARNING   IMPEXT-2773         11  The via resistance between layers %s and...
+[05/06 17:40:49     27s] WARNING   IMPVL-159          954  Pin '%s' of cell '%s' is defined in LEF ...
+[05/06 17:40:49     27s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[05/06 17:40:49     27s] ERROR     TECHLIB-1204         1  Illegal value '%s' defined for attribute...
+[05/06 17:40:49     27s] *** Message Summary: 979 warning(s), 1 error(s)
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] <CMD> floorPlan -site core -r 1.0 0.7 10 10 10 10
+[05/06 17:40:49     27s] **ERROR: (IMPTCM-162):	"core" does not match any object in design for specified type "site " object in command "floorPlan".
+
+[05/06 17:40:49     27s] Usage: floorPlan [-help] [-adjustToSite] [-coreMarginsBy {io die}] [-dieSizeByIoHeight {min max}] [-flip {n s f}] [-fplanOrigin {center llcorner}] [-noResize] [-noSnapToGrid] [-overlapSameSiteRow] {-b <die_box io_box core_box> | -s <W H Left Bottom Right Top> | -d <W H Left Bottom Right Top> | -r <aspectRatio [rowDensity [Left Bottom Right Top]]> | -su <aspectRatio [stdCellDensity [Left Bottom Right Top]]> | -keepShape <util>} [-site <site> | -siteOnly <site>]
+[05/06 17:40:49     27s] 
+[05/06 17:40:49     27s] **ERROR: (IMPTCM-4):	The value "core" specified for the object type of argument "-site" is not a valid object. Review the command specification and remove the argument or specify a legal value.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'pnr.tcl' was returned and script processing was stopped. Review the following error in 'pnr.tcl' then restart.
+[05/06 17:40:49     27s] Error info: pnr.tcl: 
+[05/06 17:40:49     27s]     while executing
+[05/06 17:40:49     27s] "floorPlan -site core -r 1.0 0.7 10 10 10 10"
+[05/06 17:40:49     27s]     (file "pnr.tcl" line 39)
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "::se_source_orig pnr.tcl"
+[05/06 17:40:49     27s]     ("uplevel" body line 1)
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "uplevel [concat ::se_source_orig  $args] "
+[05/06 17:40:49     27s]     (procedure "source" line 224)
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "source pnr.tcl"
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "::se::run_command_from_console "source pnr.tcl""
+[05/06 17:40:49     27s]     ("eval" body line 1)
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "eval {::se::run_command_from_console "source pnr.tcl"}"
+[05/06 17:40:49     27s]     (in namespace inscope "::" script line 1)
+[05/06 17:40:49     27s]     invoked from within
+[05/06 17:40:49     27s] "namespace inscope :: eval "::se::run_command_from_console \"source $fileName\""".
+[05/06 17:40:49     27s] <CMD> win
+[05/06 17:40:50     27s] <CMD> set enc_check_rename_command_name 1
+[05/06 17:42:20     38s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/06 17:45:05     55s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/06 17:45:05     55s] Innovus terminated by user interrupt.
+[05/06 17:45:05     55s] 
+[05/06 17:45:05     55s] *** Memory Usage v#1 (Current mem = 2006.621M, initial mem = 654.375M) ***
+[05/06 17:45:05     55s] 
+[05/06 17:45:05     55s] *** Summary of all messages that are not suppressed in this session:
+[05/06 17:45:05     55s] Severity  ID               Count  Summary                                  
+[05/06 17:45:05     55s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/06 17:45:05     55s] WARNING   IMPEXT-2766         11  The sheet resistance for layer %s is not...
+[05/06 17:45:05     55s] WARNING   IMPEXT-2773         11  The via resistance between layers %s and...
+[05/06 17:45:05     55s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[05/06 17:45:05     55s] WARNING   IMPVL-159          954  Pin '%s' of cell '%s' is defined in LEF ...
+[05/06 17:45:05     55s] ERROR     IMPTCM-4             1  The value "%s" specified for the %s type...
+[05/06 17:45:05     55s] ERROR     IMPTCM-162           1  "%s" does not match any object in design...
+[05/06 17:45:05     55s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[05/06 17:45:05     55s] ERROR     TECHLIB-1204         1  Illegal value '%s' defined for attribute...
+[05/06 17:45:05     55s] *** Message Summary: 979 warning(s), 4 error(s)
+[05/06 17:45:05     55s] 
+[05/06 17:45:05     55s] --- Ending "Innovus" (totcpu=0:00:55.4, real=0:05:22, mem=2006.6M) ---

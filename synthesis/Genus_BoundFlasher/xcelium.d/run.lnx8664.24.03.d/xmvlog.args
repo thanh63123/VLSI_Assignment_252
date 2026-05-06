@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+code/output/synthesis_net.v
+tb/tb_risc_cpu.v
+-DEFINE
+PROG=1
+-VFILE
+/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/YOUR_STDCELL_FILE.v
+-CDSLIB
+./xcelium.d/run.lnx8664.24.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.24.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.24.03.d/xllibs
+-ALLOWUNBOUND
+-hastop

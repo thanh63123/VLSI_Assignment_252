@@ -1,0 +1,14 @@
+#!/bin/bash -f
+#==============================================================================
+# RISC CPU - Cadence SimVision GUI
+# Based on LAB1_Simulation.pdf Step 7
+# Usage: ./scripts/go_gui
+#==============================================================================
+
+cd /home/share_file/cadence
+source add_path
+source add_license
+cd -
+
+echo "Opening Cadence SimVision..."
+simvision -64 &

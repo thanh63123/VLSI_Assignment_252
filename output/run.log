@@ -1,0 +1,149 @@
+	Top level design units:
+		tb_risc_cpu
+xcelium> source /home/share_file/cadence/installs/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+
+========================================
+RISC CPU System Test: PROG3 (Fibonacci)
+========================================
+
+Reset released, CPU running...
+
+[Cycle 11] PC=3, IR=11100011 (opcode=111, addr=3), ACC=0
+[Cycle 19] PC=4, IR=10111011 (opcode=101, addr=27), ACC=0
+[Cycle 27] PC=5, IR=11011100 (opcode=110, addr=28), ACC=0
+[Cycle 35] PC=6, IR=01011010 (opcode=010, addr=26), ACC=1
+[Cycle 43] PC=7, IR=11011011 (opcode=110, addr=27), ACC=1
+[Cycle 51] PC=8, IR=10111100 (opcode=101, addr=28), ACC=0
+[Cycle 59] PC=9, IR=11011010 (opcode=110, addr=26), ACC=0
+[Cycle 67] PC=10, IR=10011101 (opcode=100, addr=29), ACC=90
+[Cycle 75] PC=11, IR=00100000 (opcode=001, addr=0), ACC=90
+[Cycle 83] PC=3, IR=11100011 (opcode=111, addr=3), ACC=90
+[Cycle 91] PC=4, IR=10111011 (opcode=101, addr=27), ACC=1
+[Cycle 99] PC=5, IR=11011100 (opcode=110, addr=28), ACC=1
+[Cycle 107] PC=6, IR=01011010 (opcode=010, addr=26), ACC=1
+[Cycle 115] PC=7, IR=11011011 (opcode=110, addr=27), ACC=1
+[Cycle 123] PC=8, IR=10111100 (opcode=101, addr=28), ACC=1
+[Cycle 131] PC=9, IR=11011010 (opcode=110, addr=26), ACC=1
+[Cycle 139] PC=10, IR=10011101 (opcode=100, addr=29), ACC=91
+[Cycle 147] PC=11, IR=00100000 (opcode=001, addr=0), ACC=91
+[Cycle 155] PC=3, IR=11100011 (opcode=111, addr=3), ACC=91
+[Cycle 163] PC=4, IR=10111011 (opcode=101, addr=27), ACC=1
+[Cycle 171] PC=5, IR=11011100 (opcode=110, addr=28), ACC=1
+[Cycle 179] PC=6, IR=01011010 (opcode=010, addr=26), ACC=2
+[Cycle 187] PC=7, IR=11011011 (opcode=110, addr=27), ACC=2
+[Cycle 195] PC=8, IR=10111100 (opcode=101, addr=28), ACC=1
+[Cycle 203] PC=9, IR=11011010 (opcode=110, addr=26), ACC=1
+[Cycle 211] PC=10, IR=10011101 (opcode=100, addr=29), ACC=91
+[Cycle 219] PC=11, IR=00100000 (opcode=001, addr=0), ACC=91
+[Cycle 227] PC=3, IR=11100011 (opcode=111, addr=3), ACC=91
+[Cycle 235] PC=4, IR=10111011 (opcode=101, addr=27), ACC=2
+[Cycle 243] PC=5, IR=11011100 (opcode=110, addr=28), ACC=2
+[Cycle 251] PC=6, IR=01011010 (opcode=010, addr=26), ACC=3
+[Cycle 259] PC=7, IR=11011011 (opcode=110, addr=27), ACC=3
+[Cycle 267] PC=8, IR=10111100 (opcode=101, addr=28), ACC=2
+[Cycle 275] PC=9, IR=11011010 (opcode=110, addr=26), ACC=2
+[Cycle 283] PC=10, IR=10011101 (opcode=100, addr=29), ACC=92
+[Cycle 291] PC=11, IR=00100000 (opcode=001, addr=0), ACC=92
+[Cycle 299] PC=3, IR=11100011 (opcode=111, addr=3), ACC=92
+[Cycle 307] PC=4, IR=10111011 (opcode=101, addr=27), ACC=3
+[Cycle 315] PC=5, IR=11011100 (opcode=110, addr=28), ACC=3
+[Cycle 323] PC=6, IR=01011010 (opcode=010, addr=26), ACC=5
+[Cycle 331] PC=7, IR=11011011 (opcode=110, addr=27), ACC=5
+[Cycle 339] PC=8, IR=10111100 (opcode=101, addr=28), ACC=3
+[Cycle 347] PC=9, IR=11011010 (opcode=110, addr=26), ACC=3
+[Cycle 355] PC=10, IR=10011101 (opcode=100, addr=29), ACC=93
+[Cycle 363] PC=11, IR=00100000 (opcode=001, addr=0), ACC=93
+[Cycle 371] PC=3, IR=11100011 (opcode=111, addr=3), ACC=93
+[Cycle 379] PC=4, IR=10111011 (opcode=101, addr=27), ACC=5
+[Cycle 387] PC=5, IR=11011100 (opcode=110, addr=28), ACC=5
+[Cycle 395] PC=6, IR=01011010 (opcode=010, addr=26), ACC=8
+[Cycle 403] PC=7, IR=11011011 (opcode=110, addr=27), ACC=8
+[Cycle 411] PC=8, IR=10111100 (opcode=101, addr=28), ACC=5
+[Cycle 419] PC=9, IR=11011010 (opcode=110, addr=26), ACC=5
+[Cycle 427] PC=10, IR=10011101 (opcode=100, addr=29), ACC=95
+[Cycle 435] PC=11, IR=00100000 (opcode=001, addr=0), ACC=95
+[Cycle 443] PC=3, IR=11100011 (opcode=111, addr=3), ACC=95
+[Cycle 451] PC=4, IR=10111011 (opcode=101, addr=27), ACC=8
+[Cycle 459] PC=5, IR=11011100 (opcode=110, addr=28), ACC=8
+[Cycle 467] PC=6, IR=01011010 (opcode=010, addr=26), ACC=d
+[Cycle 475] PC=7, IR=11011011 (opcode=110, addr=27), ACC=d
+[Cycle 483] PC=8, IR=10111100 (opcode=101, addr=28), ACC=8
+[Cycle 491] PC=9, IR=11011010 (opcode=110, addr=26), ACC=8
+[Cycle 499] PC=10, IR=10011101 (opcode=100, addr=29), ACC=98
+[Cycle 507] PC=11, IR=00100000 (opcode=001, addr=0), ACC=98
+[Cycle 515] PC=3, IR=11100011 (opcode=111, addr=3), ACC=98
+[Cycle 523] PC=4, IR=10111011 (opcode=101, addr=27), ACC=d
+[Cycle 531] PC=5, IR=11011100 (opcode=110, addr=28), ACC=d
+[Cycle 539] PC=6, IR=01011010 (opcode=010, addr=26), ACC=15
+[Cycle 547] PC=7, IR=11011011 (opcode=110, addr=27), ACC=15
+[Cycle 555] PC=8, IR=10111100 (opcode=101, addr=28), ACC=d
+[Cycle 563] PC=9, IR=11011010 (opcode=110, addr=26), ACC=d
+[Cycle 571] PC=10, IR=10011101 (opcode=100, addr=29), ACC=9d
+[Cycle 579] PC=11, IR=00100000 (opcode=001, addr=0), ACC=9d
+[Cycle 587] PC=3, IR=11100011 (opcode=111, addr=3), ACC=9d
+[Cycle 595] PC=4, IR=10111011 (opcode=101, addr=27), ACC=15
+[Cycle 603] PC=5, IR=11011100 (opcode=110, addr=28), ACC=15
+[Cycle 611] PC=6, IR=01011010 (opcode=010, addr=26), ACC=22
+[Cycle 619] PC=7, IR=11011011 (opcode=110, addr=27), ACC=22
+[Cycle 627] PC=8, IR=10111100 (opcode=101, addr=28), ACC=15
+[Cycle 635] PC=9, IR=11011010 (opcode=110, addr=26), ACC=15
+[Cycle 643] PC=10, IR=10011101 (opcode=100, addr=29), ACC=85
+[Cycle 651] PC=11, IR=00100000 (opcode=001, addr=0), ACC=85
+[Cycle 659] PC=3, IR=11100011 (opcode=111, addr=3), ACC=85
+[Cycle 667] PC=4, IR=10111011 (opcode=101, addr=27), ACC=22
+[Cycle 675] PC=5, IR=11011100 (opcode=110, addr=28), ACC=22
+[Cycle 683] PC=6, IR=01011010 (opcode=010, addr=26), ACC=37
+[Cycle 691] PC=7, IR=11011011 (opcode=110, addr=27), ACC=37
+[Cycle 699] PC=8, IR=10111100 (opcode=101, addr=28), ACC=22
+[Cycle 707] PC=9, IR=11011010 (opcode=110, addr=26), ACC=22
+[Cycle 715] PC=10, IR=10011101 (opcode=100, addr=29), ACC=b2
+[Cycle 723] PC=11, IR=00100000 (opcode=001, addr=0), ACC=b2
+[Cycle 731] PC=3, IR=11100011 (opcode=111, addr=3), ACC=b2
+[Cycle 739] PC=4, IR=10111011 (opcode=101, addr=27), ACC=37
+[Cycle 747] PC=5, IR=11011100 (opcode=110, addr=28), ACC=37
+[Cycle 755] PC=6, IR=01011010 (opcode=010, addr=26), ACC=59
+[Cycle 763] PC=7, IR=11011011 (opcode=110, addr=27), ACC=59
+[Cycle 771] PC=8, IR=10111100 (opcode=101, addr=28), ACC=37
+[Cycle 779] PC=9, IR=11011010 (opcode=110, addr=26), ACC=37
+[Cycle 787] PC=10, IR=10011101 (opcode=100, addr=29), ACC=a7
+[Cycle 795] PC=11, IR=00100000 (opcode=001, addr=0), ACC=a7
+[Cycle 803] PC=3, IR=11100011 (opcode=111, addr=3), ACC=a7
+[Cycle 811] PC=4, IR=10111011 (opcode=101, addr=27), ACC=59
+[Cycle 819] PC=5, IR=11011100 (opcode=110, addr=28), ACC=59
+[Cycle 827] PC=6, IR=01011010 (opcode=010, addr=26), ACC=90
+[Cycle 835] PC=7, IR=11011011 (opcode=110, addr=27), ACC=90
+[Cycle 843] PC=8, IR=10111100 (opcode=101, addr=28), ACC=59
+[Cycle 851] PC=9, IR=11011010 (opcode=110, addr=26), ACC=59
+[Cycle 859] PC=10, IR=10011101 (opcode=100, addr=29), ACC=c9
+[Cycle 867] PC=11, IR=00100000 (opcode=001, addr=0), ACC=c9
+[Cycle 875] PC=3, IR=11100011 (opcode=111, addr=3), ACC=c9
+[Cycle 883] PC=4, IR=10111011 (opcode=101, addr=27), ACC=90
+[Cycle 891] PC=5, IR=11011100 (opcode=110, addr=28), ACC=90
+[Cycle 899] PC=6, IR=01011010 (opcode=010, addr=26), ACC=e9
+[Cycle 907] PC=7, IR=11011011 (opcode=110, addr=27), ACC=e9
+[Cycle 915] PC=8, IR=10111100 (opcode=101, addr=28), ACC=90
+[Cycle 923] PC=9, IR=11011010 (opcode=110, addr=26), ACC=90
+[Cycle 931] PC=10, IR=10011101 (opcode=100, addr=29), ACC=0
+[Cycle 939] PC=12, IR=00100000 (opcode=001, addr=0), ACC=0
+
+--- CPU Halted ---
+Halt PC = 13 (0xd)
+Total cycles = 944
+ACC = 0x0
+
+*** PASS: PROG3 (Fibonacci) - Halted at expected PC ***
+
+--- Memory Dump (data region 0x1A-0x1F) ---
+  [0x1A] = 0x90
+  [0x1B] = 0xe9
+  [0x1C] = 0x90
+  [0x1D] = 0x90
+  [0x1E] = 0x0
+  [0x1F] = 0x1
+
+========================================
+
+Simulation complete via $finish(1) at time 9435 NS + 0
+./tb/tb_risc_cpu.v:1434         $finish;
+xcelium> exit

@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+output/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-amsdlibdir
+output/xcelium.d/AMSD
+-XMLIBDIRNAME
+output/xcelium.d
+rtl/risc_cpu.v
+tb/tb_risc_cpu.v
+-DEFINE
+PROG=3
+-CDSLIB
+output/xcelium.d/run.lnx8664.24.03.d/cdsrun.lib
+-HDLVAR
+output/xcelium.d/run.lnx8664.24.03.d/hdlrun.var
+-no_analogsolver
+-UPDATE
+-XLLIBSTORE
+output/xcelium.d/run.lnx8664.24.03.d/xllibs
+-ALLOWUNBOUND
+-hastop

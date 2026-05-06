@@ -1,0 +1,162 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:48:18.166882] Configured Lic search path (22.01-s003): 5280@172.28.10.187:5280@192.168.32.10
+
+Version: 22.17-s071_1, built Wed Sep 11 22:37:05 PDT 2024
+Options: -files synthesis.tcl 
+Date:    Wed May 06 16:48:18 2026
+Host:    vlsiktmt (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (1core*2cpus*3physical cpus*Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz 22528KB) (32780644KB)
+PID:     2540
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[16:48:38.437480] Periodic Lic check successful
+[16:48:38.437483] Feature usage summary:
+[16:48:38.437488] Genus_Synthesis
+ (20 seconds elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (25 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (31 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source synthesis.tcl
+#@ Begin verbose source ./synthesis.tcl
+@file(synthesis.tcl) 15: set DESIGN risc_cpu
+@file(synthesis.tcl) 16: set _OUTPUTS_PATH ./output
+@file(synthesis.tcl) 17: set _REPORTS_PATH ./reports
+@file(synthesis.tcl) 18: set _LOG_PATH     ./logs
+@file(synthesis.tcl) 20: file mkdir $_OUTPUTS_PATH
+@file(synthesis.tcl) 21: file mkdir $_REPORTS_PATH
+@file(synthesis.tcl) 22: file mkdir $_LOG_PATH
+@file(synthesis.tcl) 28: set_db init_lib_search_path "/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB"
+  Setting attribute of root '/': 'init_lib_search_path' = /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB
+@file(synthesis.tcl) 29: set_db init_hdl_search_path "/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL"
+  Setting attribute of root '/': 'init_hdl_search_path' = /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL
+@file(synthesis.tcl) 31: read_libs "slow.lib"
+
+  Message Summary for Library slow.lib:
+  *************************************
+Warning : Invalid value specified. [LBR-531]
+        : Illegal value '0.9V' defined for attribute 'voltage_unit'. The attribute will be ignored. (File /data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/LIB/slow.lib, Line 15)
+        : Invalid value found for the attribute. Correct as per Liberty syntax.
+  Invalid value specified. [LBR-531]: 1
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 2
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(synthesis.tcl) 39: read_hdl " \
+    risc_cpu.v \
+"
+@file(synthesis.tcl) 43: elaborate $DESIGN
+  Library has 324 usable logic and 126 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'risc_cpu' from file '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL/risc_cpu.v'.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'alu' in file '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL/risc_cpu.v' on line 63.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'controller' in file '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL/risc_cpu.v' on line 237.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'controller' in file '/data/cc03group4/vlsi/Assignment/synthesis/Genus_BoundFlasher/RTL/risc_cpu.v' on line 266.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[0]' in module 'risc_cpu'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[1]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[2]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[3]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[4]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[5]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[6]' in module 'risc_cpu'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'data_bus[7]' in module 'risc_cpu'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'risc_cpu'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       1 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: risc_cpu, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: risc_cpu, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: risc_cpu, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: risc_cpu, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(synthesis.tcl) 44: check_design -unresolved
+
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'risc_cpu'
+
+No empty modules in design 'risc_cpu'
+
+  Done Checking the design.
+@file(synthesis.tcl) 49: read_sdc synthesis/Genus_BoundFlasher/constraints/risc_cpu_gate.sdc
+Error: Unable to open synthesis/Genus_BoundFlasher/constraints/risc_cpu_gate.sdc
+#@ End verbose source ./synthesis.tcl
+Failed on read_sdc
+Encountered problems processing file: synthesis.tcl
+WARNING: This version of the tool is 601 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 74s, ST: 16s, FG: 16s, CPU: 10.1%}, MEM {curr: 1.2G, peak: 1.3G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.7G}
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 85s, ST: 17s, FG: 17s, CPU: 10.0%}, MEM {curr: 1.2G, peak: 1.3G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.4, cpu: 2, total: 31.3G, free: 1.7G}
+Abnormal exit.

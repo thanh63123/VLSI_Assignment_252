@@ -1,0 +1,18 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-q
+-xmlibdirname
+output/xcelium.d
+-access
+rw
+-licqueue
+-64BIT
+-l
+output/run.log
+rtl/risc_cpu.v
+tb/tb_risc_cpu.v
++define+PROG=3
+-top
+tb_risc_cpu

@@ -1,0 +1,42 @@
+#e1(06May2026:12:12:57): source output/xcelium.d/env.d/env.history.06May2026_12_12_57
+s1(06May2026:12:12:57):  xrun -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=1 
+#e2(06May2026:12:13:19): source output/xcelium.d/env.d/env.history.06May2026_12_13_19
+s2(06May2026:12:13:19):  xrun -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=2 
+#e3(06May2026:12:13:40): source output/xcelium.d/env.d/env.history.06May2026_12_13_40
+s3(06May2026:12:13:40):  xrun -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=3 
+#e4(06May2026:12:30:36): source output/xcelium.d/env.d/env.history.06May2026_12_30_36
+s4(06May2026:12:30:36):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_address_mux 
+#e5(06May2026:12:30:58): source output/xcelium.d/env.d/env.history.06May2026_12_30_58
+s5(06May2026:12:30:58):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_alu 
+#e6(06May2026:12:31:07): source output/xcelium.d/env.d/env.history.06May2026_12_31_07
+s6(06May2026:12:31:07):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_alu_extended 
+#e7(06May2026:12:31:10): source output/xcelium.d/env.d/env.history.06May2026_12_31_10
+s7(06May2026:12:31:10):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_multiplier 
+#e8(06May2026:12:31:16): source output/xcelium.d/env.d/env.history.06May2026_12_31_16
+s8(06May2026:12:31:16):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_program_counter 
+#e9(06May2026:12:34:04): source output/xcelium.d/env.d/env.history.06May2026_12_34_04
+s9(06May2026:12:34:04):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_address_mux 
+#e10(06May2026:12:34:25): source output/xcelium.d/env.d/env.history.06May2026_12_34_25
+s10(06May2026:12:34:25):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_alu 
+#e11(06May2026:12:34:46): source output/xcelium.d/env.d/env.history.06May2026_12_34_46
+s11(06May2026:12:34:46):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_alu_extended 
+#e12(06May2026:12:35:07): source output/xcelium.d/env.d/env.history.06May2026_12_35_07
+s12(06May2026:12:35:07):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_controller 
+#e13(06May2026:12:35:28): source output/xcelium.d/env.d/env.history.06May2026_12_35_28
+s13(06May2026:12:35:28):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_divider 
+#e14(06May2026:12:35:49): source output/xcelium.d/env.d/env.history.06May2026_12_35_49
+s14(06May2026:12:35:49):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_hazard_unit 
+#e15(06May2026:12:36:10): source output/xcelium.d/env.d/env.history.06May2026_12_36_10
+s15(06May2026:12:36:10):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_memory 
+#e16(06May2026:12:36:31): source output/xcelium.d/env.d/env.history.06May2026_12_36_31
+s16(06May2026:12:36:31):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_multiplier 
+#e17(06May2026:12:36:52): source output/xcelium.d/env.d/env.history.06May2026_12_36_52
+s17(06May2026:12:36:52):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_program_counter 
+#e18(06May2026:12:37:13): source output/xcelium.d/env.d/env.history.06May2026_12_37_13
+s18(06May2026:12:37:13):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v -top tb_register 
+#e19(06May2026:12:37:34): source output/xcelium.d/env.d/env.history.06May2026_12_37_34
+s19(06May2026:12:37:34):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=1 -top tb_risc_cpu 
+#e20(06May2026:12:37:55): source output/xcelium.d/env.d/env.history.06May2026_12_37_55
+s20(06May2026:12:37:55):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=2 -top tb_risc_cpu 
+#e21(06May2026:12:38:17): source output/xcelium.d/env.d/env.history.06May2026_12_38_17
+s21(06May2026:12:38:17):  xrun -q -xmlibdirname output/xcelium.d -access rw -licqueue -64BIT -l output/run.log rtl/risc_cpu.v tb/tb_risc_cpu.v +define+PROG=3 -top tb_risc_cpu 

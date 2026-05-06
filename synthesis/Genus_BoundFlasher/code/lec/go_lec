@@ -1,0 +1,13 @@
+#!/bin/bash -f
+#==============================================================================
+# RISC CPU - Conformal LEC (Logic Equivalence Check)
+# Usage: ./go_lec
+# Compares RTL vs synthesis netlist
+#==============================================================================
+
+cd /home/share_file/cadence
+source add_path
+source add_license
+cd -
+
+lec -64 -dofile scripts/lec.tcl &

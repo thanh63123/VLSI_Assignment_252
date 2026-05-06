@@ -1,0 +1,36 @@
+#######################################
+############ GENUS RAK ###############
+#######################################
+
+Tool Versions Used in Designing the Lab
+
+Genus version >> 19.10 
+
+This RAK contains the following directories and files:
+Genus-19.10_Adoption_Kit
+	-constraints               		// Contains SDC (constraint) files
+	-LIBS					// Contains technology libraries and macro libraries
+	-LEFS					// Contains technology lef and macro lefs
+	-RTL					// Contains HDL files
+        -LAB1,LAB2,LAB3                         // Lab directories	
+        -README                                 // Contains info regarding all the files 
+ 
+
+Each lab directory contains the following files:
+	A lab-specific script file.
+
+List of Labs :
+
+	
+    LAB1 - Basic genus flow
+    LAB2 - DFT flow	
+    LAB3 - low power flow using clock gating and leakage power opto
+
+
+For running the labs, "cd" into the respective lab directory and run the lab-specific script file.  
+Following are the lab specific script files:
+
+
+LAB1 - run.tcl
+LAB2 - run.tcl
+LAB3 - run.tcl 
